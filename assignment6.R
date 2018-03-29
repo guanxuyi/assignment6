@@ -1,3 +1,4 @@
+#install.packages('ggmap')
 library(ggmap)
 library(tidyverse)
 
@@ -48,3 +49,4 @@ ggmap(roadmap) +
   geom_path(aes(x = lon, y = lat), color = "blue", size = 1, data = r, lineend = "round")
 ggmap(watermap) + 
   geom_path(aes(x = lon, y = lat), color = "red", size = 1, data = r, lineend = "round")
+
